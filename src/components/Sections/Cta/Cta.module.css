@@ -1,0 +1,76 @@
+.ctaBox {
+  margin-top: 54px;
+}
+.ctaSubHeading {
+  font-size: 24px !important;
+}
+.ctaBoxContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ctaFormContainer {
+  width: 450px;
+  padding: 24px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin-top: 34px;
+  box-shadow: 0 0 5px 5px rgba(199, 199, 199, 0.553);
+
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.formInput {
+  background-color: whitesmoke !important;
+}
+.formInput:focus {
+  background-color: white !important;
+}
+.formBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.formBtn {
+  width: 100%;
+  background: white !important;
+  color: var(--primary-color) !important;
+  opacity: 0.8;
+  font-weight: bold !important;
+}
+.formBtn:hover {
+  opacity: 1;
+}
+
+.orHeading {
+  margin-top: 54px;
+  position: relative;
+  background-color: white;
+}
+.orHeading:before {
+  content: "";
+  width: 200%;
+  height: 5px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: -50%;
+  bottom: 40%;
+  z-index: -1;
+}
+.contactLinks {
+     margin-top: 54px;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media screen and (max-width: 512px) {
+  .ctaFormContainer {
+    width: 350px !important;
+  }
+  .ctaSubHeading {
+    font-size: 18px !important;
+  }
+}
+

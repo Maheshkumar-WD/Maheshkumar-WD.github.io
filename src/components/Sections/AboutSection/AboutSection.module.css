@@ -1,0 +1,68 @@
+.Aboutsection{
+  background-color: #d3c8ec;
+}
+.myImageDiv {
+  /* border-radius: 50%; */
+  width: 350px;
+  height: 350px;
+  border: 8px dashed var(--primary-color);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.187);
+
+}
+.myImage {
+  width: 100%;
+}
+.AboutBox {
+  padding: 24px;
+  width: 700px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.187);
+}
+.AboutContentContainer {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 54px;
+}
+.AboutText {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+@media screen and (max-width: 1274px) {
+  .AboutBox {
+    width: 500px !important;
+  }
+}
+@media screen and (max-width: 1071px) {
+  .AboutContentContainer {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .AboutBox {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  .AboutContentContainer{
+    flex-direction: column;
+  }
+  .myImageDiv {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .myImage {
+    width: 100% !important;
+  }
+  .AboutContentContainer {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .AboutText {
+    font-size: 18px;
+  }
+}

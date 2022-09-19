@@ -1,0 +1,13 @@
+.footer{
+     display: flex;
+     background-color: var(--primary-color);
+     justify-content: center;
+     padding: 12px 0;
+     color: white;
+}
+
+@media screen and (max-width:424px) {
+     .cpyText{
+          font-size: 12px !important;
+     }
+}

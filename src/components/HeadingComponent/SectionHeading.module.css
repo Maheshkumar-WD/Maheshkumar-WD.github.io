@@ -1,0 +1,23 @@
+.Heading {
+  padding-top: 48px;
+  font-size: 54px;
+  position: relative;
+  margin-left: 54px;
+  background-color: none !important;
+}
+.Heading::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 10px;
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width:455px){
+   .Heading{
+    margin: auto;
+    font-size: 38px;
+   }
+}

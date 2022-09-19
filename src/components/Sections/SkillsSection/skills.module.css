@@ -1,0 +1,52 @@
+.skillsContainer{
+     margin-top: 54px;
+}
+.skillBox{
+     width: 100% !important;
+     padding: 24px ;
+     box-shadow: 0 0 5px 5px rgba(199, 199, 199, 0.553);
+     margin: auto;
+     border-radius: 5px;
+     transition: all 0.4s;
+}
+.skillBox:hover{
+background-color: var(--primary-color);
+color: white;
+}
+.commonIcons{
+     width:120px;
+     height:120px;
+     margin: auto ;
+}
+.skillTitle{
+     font-size: 24px;
+     font-weight: 600;
+     text-align: center;
+}
+
+
+
+@media screen and (max-width: 1216px) {
+     
+     .skillsGridBox{
+          grid-template-columns: repeat(3,1fr) !important;
+     }
+}
+
+@media screen and (max-width:770px) {
+     .skillsContainer{
+          padding: 0 !important;
+     }
+     .skillsGridBox{
+          grid-template-columns: repeat(2,1fr) !important;
+     }
+}
+
+@media screen and (max-width:525px) {
+     .skillsContainer{
+          padding: 0 !important;
+     }
+     .skillsGridBox{
+          grid-template-columns: repeat(1,1fr) !important;
+     }
+}

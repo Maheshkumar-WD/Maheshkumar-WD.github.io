@@ -1,0 +1,15 @@
+:root{
+  --primary-color: #6B46C1;
+  --secondary-color:  #553c9a;
+  --primary-logo-color: #f2f2f2;
+  --secondary-logo-color:var(--primary-color);
+  --primary-text-color: #f2f2f2;
+}
+/* 
+#553C9A
+#6B46C1
+#805AD5
+#9F7AEA
+#B794F4
+
+*/
