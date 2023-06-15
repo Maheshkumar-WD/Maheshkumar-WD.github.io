@@ -5,6 +5,15 @@
   --secondary-logo-color:var(--primary-color);
   --primary-text-color: #f2f2f2;
 }
+
+/* :root {
+  --primary-color: #11999e;
+  --secondary-color: #30e3ca;
+  --primary-logo-color: #f3f6f6;
+  --secondary-logo-color: #40514e;
+  --primary-text-color: #f3f6f6;
+} */
+
 /* 
 #553C9A
 #6B46C1

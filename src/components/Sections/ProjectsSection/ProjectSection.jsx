@@ -12,7 +12,7 @@ function ProjectSection() {
       <Box className={projectStyles.projectsContainer}>
         {
           projects?.map((project)=>{
-               return <ProjectCard key={project.id} projectStyles={projectStyles} project={project} />
+               return <ProjectCard  key={project.id} projectStyles={projectStyles} project={project} />
           })
         }
       </Box>

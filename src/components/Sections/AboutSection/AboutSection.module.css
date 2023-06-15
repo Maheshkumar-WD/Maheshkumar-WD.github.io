@@ -5,7 +5,7 @@
   /* border-radius: 50%; */
   width: 350px;
   height: 350px;
-  border: 8px dashed var(--primary-color);
+  /* border: 4px dashed var(--primary-color); */
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.187);

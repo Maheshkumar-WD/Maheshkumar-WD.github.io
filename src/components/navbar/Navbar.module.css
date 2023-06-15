@@ -20,9 +20,12 @@
 .navlogo {
   color: var(--primary-logo-color);
   font-size: 32px !important;
+  font-family: 'Merienda', cursive !important;
 }
 .DrawerNav {
   color: var(--primary-color);
+  font-family: 'Merienda', cursive !important;
+
 }
 .drawer__link {
   color: var(--primary-color) !important;

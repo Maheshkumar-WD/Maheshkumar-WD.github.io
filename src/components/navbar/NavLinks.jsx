@@ -1,6 +1,7 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
 import DownloadIcon from "@mui/icons-material/Download";
-import { Link  } from "react-scroll";
+import { Link } from "react-scroll";
+import resume from "../../utils/Golla_Mahesh_Kumar_Resume.pdf";
 import {
   Box,
   Button,
@@ -34,6 +35,7 @@ function NavLinks() {
   });
   return width > 768 ? (
     <Box display={"flex"} alignItems="center" gap={"24px"}>
+      <Link className={styles.navLink} to="bannerSection">Home</Link>
       <Link className={styles.navLink} to="about">
         About
       </Link>
@@ -47,9 +49,8 @@ function NavLinks() {
         Contact Me
       </Link>
       <a
-      rel="noopener noreferrer"
-        target="_blank"
-        href="https://drive.google.com/file/d/1eCul7ln-SgZm_cjRiw6nlZo15ARYryZG/view?usp=sharing"
+        href="utils/Golla_Mahesh_Kumar_Resume.pdf"
+        download
       >
         <Button size={"sm"} rightIcon={<DownloadIcon />}>
           Download CV
@@ -58,7 +59,7 @@ function NavLinks() {
     </Box>
   ) : (
     <>
-      <Button onClick={() => handleClick(size)} key={size} m={4}>
+      <Button onClick={() => handleClick(size)} size={"sm"} key={size} m={4}>
         {<HamburgerIcon />}
       </Button>
 
@@ -72,6 +73,17 @@ function NavLinks() {
           <hr />
           <DrawerBody>
             <Box textAlign={"center"}>
+            <Box>
+                <Link
+                  className={styles.drawer__link}
+                  to="bannerSection"
+                  onClick={() => {
+                    onClose();
+                  }}
+                >
+                  <Heading size={"md"}>Home</Heading>
+                </Link>
+              </Box>
               <Box>
                 <Link
                   className={styles.drawer__link}
@@ -80,7 +92,7 @@ function NavLinks() {
                     onClose();
                   }}
                 >
-                  <Heading>About</Heading>
+                  <Heading size={"md"}>About</Heading>
                 </Link>
               </Box>
               <Box>
@@ -92,7 +104,7 @@ function NavLinks() {
                   className={styles.drawer__link}
                 >
                   {" "}
-                  <Heading>Projects</Heading>{" "}
+                  <Heading size={"md"}>Projects</Heading>{" "}
                 </Link>
               </Box>
               <Box>
@@ -103,7 +115,7 @@ function NavLinks() {
                   }}
                   className={styles.drawer__link}
                 >
-                  <Heading>Skills</Heading>
+                  <Heading size={"md"}>Skills</Heading>
                 </Link>
               </Box>
               <Box>
@@ -114,18 +126,19 @@ function NavLinks() {
                   }}
                   className={styles.drawer__link}
                 >
-                  <Heading>Contact</Heading>
+                  <Heading size={"md"}>Contact</Heading>
                 </Link>
               </Box>
               <Box>
                 <a
-                rel="noopener noreferrer"
-                  href="https://drive.google.com/file/d/1eCul7ln-SgZm_cjRiw6nlZo15ARYryZG/view?usp=sharing"
-                  target="_blank"
-                  onClick={()=>onClose()}
+                  href="utils/Golla_Mahesh_Kumar_Resume.pdf"
+                  download
+                  onClick={() => onClose()}
                 >
                   <Button
+                    
                     className={styles.DrawerdownloadBtn}
+                    onClick={()=>{window.open(resume)}}
                     rightIcon={<DownloadIcon />}
                   >
                     DOWNLOAD CV

@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Body from "./components/Body";
@@ -13,6 +12,5 @@ function App() {
     </div>
   );
 }
-// GitHubCalendar(".calendar", "Maheshkumar-WD", { responsive: true });
 
 export default App;

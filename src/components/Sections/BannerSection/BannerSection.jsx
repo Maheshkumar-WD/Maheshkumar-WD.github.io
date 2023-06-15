@@ -8,7 +8,7 @@ import sectionStyles from "./../Section.module.css"
 function BannerSection() {
 
   return (
-    <Flex  className={styles.bannerSection+" " +sectionStyles.section} gap="12px" justifyContent={"space-evenly"} alignItems="center">
+    <Flex id="bannerSection" className={styles.bannerSection+" " +sectionStyles.section} gap="12px" justifyContent={"space-evenly"} alignItems="center">
       <LeftBanner />
       <RightBanner />
     </Flex>

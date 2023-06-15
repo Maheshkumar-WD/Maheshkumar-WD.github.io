@@ -1,0 +1,12 @@
+.calendar{
+     margin: auto;
+     margin-top: 24px;
+     padding: 64px 0;
+     border: 2px solid black;
+}
+.gitStatImage{
+     width: 200px;
+     margin: auto;
+     border-radius: 50%;
+     box-shadow: 0 0 10px 5px #ddd ;
+}
